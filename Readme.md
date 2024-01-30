@@ -2,7 +2,7 @@
 
 * Студент: [Елена Артеева](https://up.htmlacademy.ru/htmlcss/39/user/2490157).
 * Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
-
+* Cайт: [Мой проект Седона](https://elart27.github.io/2490157-sedona-39/).
 ---
 
 
