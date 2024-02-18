@@ -7,7 +7,7 @@
   <body>
 		<header class="page-header" data-test="header">
       <a class="logo" href="index.html">
-     		<img class="logo-image" src="image/logotype/logo-sedona.svg" width="138" height="64" alt="Логотип города Седона.">
+     		<img class="logo-image" src="image/logotype/logo.svg" width="138" height="64" alt="Логотип города Седона">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -126,11 +126,13 @@
       <section class="catalog" data-test="catalog">
       	<header class="catalog-header">
       		<h2 class="catalog-title">Найдено гостиниц: 38</h2>
-        	<select class="select-control" name="sorting">
-        		<option value="cheap">Сначала дешевые</option>
-        		<option value="expensive">Сначала дорогие</option>
-        		<option value="popular">Сначала популярные</option>
-        	</select>
+        	<label class="catalog-select">
+            <select class="select-control" name="sorting">
+        		  <option value="cheap">Сначала дешевые</option>
+        		  <option value="expensive">Сначала дорогие</option>
+        		  <option value="popular">Сначала популярные</option>
+        	  </select>
+          </label>
         	<ul class="view-button-list">
          		<li class="view-button-item">
           		<a class="view-button-title" href="#">
@@ -272,9 +274,9 @@
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-copyright" href="https://htmlacademy.ru/">
-        <img class="logo-copyright" src="image/logotype/logo-htmlacademy.svg" width="115" height="33" alt="Логотип школы HTML Academy.">
+        <img class="logo-copyright" src="image/logotype/logo-dev.svg" width="115" height="33" alt="Логотип школы HTML Academy">
       </a>
     </footer>
   </body>
