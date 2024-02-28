@@ -547,16 +547,6 @@ padding: 85px;
   padding: 0;
 }
 
-.filter-group:nth-child(1),
-.filter-group:nth-child(2) {
-  min-width: 150px;
-  max-width: 150px;
-}
-
-.filter-group:nth-child(2) {
-  margin-right: auto;
-}
-
 .filter-title {
   font-weight: 700;
 }
@@ -575,11 +565,6 @@ padding: 85px;
   justify-content: end;
   gap: 32px;
   width: 191px;
-}
-
-.control {
-  position: relative;
-  display: block;
 }
 
 .control-label {
