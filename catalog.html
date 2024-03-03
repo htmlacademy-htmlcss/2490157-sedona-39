@@ -10,10 +10,10 @@
       <!--Header-->
       <header class="page-header" data-test="header">
         <div class="container container-flex">
-          <a class="logo" href="index.html">
-            <img class="logo-image" src="image/logotype/logo.svg" width="138" height="64" alt="Логотип города Седона">
-          </a>
           <nav class="nav">
+            <a class="logo" href="index.html">
+              <img class="logo-image" src="image/logotype/logo.svg" width="140" height="70" alt="Логотип города Седона.">
+            </a>
             <ul class="nav-list">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Главная</a>
@@ -28,12 +28,12 @@
             <ul class="nav-actions-list">
               <li class="nav-actions-item">
                 <a class="nav-actions-link nav-search" href="#">
-                  <span class="visually-hidden">Поиск</span>
+                  <span class="visually-hidden">Поиск.</span>
                 </a>
               </li>
               <li class="nav-actions-item">
                 <a class="nav-actions-link nav-favourites" href="#">
-                  <span class="visually-hidden">Избранное</span>
+                  <span class="visually-hidden">Избранное.</span>
                   <span class="nav-actions-link-badge">12</span>
                 </a>
               </li>
@@ -45,7 +45,7 @@
         </div>
       </header>
 
-      <main class="page-main main-inner" data-test="main">
+      <main class="main-inner inner-container" data-test="main">
         <header class="header-inner" data-test="filter">
           <div class="container">
             <h1 class="catalog-header-title title-h1">Гостиницы Седоны</h1>
@@ -61,86 +61,90 @@
             </ol>
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
               <!--Поле «Инфраструктура»-->
-              <fieldset class="filter-group">
-                <legend class="filter-title title-h4">Инфраструктура:</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
-                    <label class="checkbox control">
-                      <input class="checkbox-input" type="checkbox" name="pool" checked>
-                      <span class="checkbox-label control-label control-mark">Бассейн</span>
+              <section class="filter-selector">
+                <fieldset class="filter-group">
+                  <legend class="filter-title title-h4">Инфраструктура:</legend>
+                  <ul class="filter-list">
+                    <li class="filter-item">
+                      <label class="checkbox control">
+                        <input class="checkbox-input" type="checkbox" name="pool" checked>
+                        <span class="checkbox-label control-label control-mark">Бассейн</span>
+                        </label>
+                    </li>
+                    <li class="filter-item">
+                      <label class="checkbox control">
+                        <input class="checkbox-input" type="checkbox" name="parking" checked>
+                        <span class="checkbox-label control-label">Парковка</span>
                       </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="checkbox control">
-                      <input class="checkbox-input" type="checkbox" name="parking" checked>
-                      <span class="checkbox-label control-label">Парковка</span>
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="checkbox control">
-                      <input class="checkbox-input" type="checkbox" name="wifi">
-                      <span class="checkbox-label control-label">Wi-Fi</span>
+                    </li>
+                    <li class="filter-item">
+                      <label class="checkbox control">
+                        <input class="checkbox-input" type="checkbox" name="wifi">
+                        <span class="checkbox-label control-label">Wi-Fi</span>
+                        </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <!--Поле «Тип жилья»-->
+                <fieldset class="filter-group">
+                  <legend class="filter-title title-h4">Тип жилья:</legend>
+                  <ul class="filter-list">
+                    <li class="filter-item">
+                      <label class="radio control">
+                        <input class="radio-input" type="radio" name="housing-type" value="hotel" checked>
+                        <span class="radio-label control-label">Гостиница</span>
                       </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <!--Поле «Тип жилья»-->
-              <fieldset class="filter-group">
-                <legend class="filter-title title-h4">Тип жилья:</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
-                    <label class="radio control">
-                      <input class="radio-input" type="radio" name="housing-type" value="hotel" checked>
-                      <span class="radio-label control-label">Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="radio control">
-                      <input class="radio-input" type="radio" name="housing-type" value="motel">
-                      <span class="radio-label control-label">Мотель</span>
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="radio control">
-                      <input class="radio-input" type="radio" name="housing-type" value="apartments">
-                      <span class="radio-label control-label">Апартаменты</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+                    </li>
+                    <li class="filter-item">
+                      <label class="radio control">
+                        <input class="radio-input" type="radio" name="housing-type" value="motel">
+                        <span class="radio-label control-label">Мотель</span>
+                      </label>
+                    </li>
+                    <li class="filter-item">
+                      <label class="radio control">
+                        <input class="radio-input" type="radio" name="housing-type" value="apartments">
+                        <span class="radio-label control-label">Апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </section>
               <!--Поле «Стоимость»-->
-              <fieldset class="filter-group">
-                <legend class="filter-title title-h4">Стоимость, ₽:</legend>
-                <div class="range-inputs">
-                  <div class="container-relative">
-                    <label class="filer-range-control">
-                      <span class="control-label">От</span>
-                    </label>
-                    <input type="text" name="min-value" value="0">
+              <section class="filter-price">
+                <fieldset class="filter-group">
+                  <legend class="filter-title title-h4">Стоимость, ₽:</legend>
+                  <div class="range-inputs">
+                    <div class="container-relative">
+                      <label class="filer-range-control">
+                        <span class="control-label">От</span>
+                      </label>
+                      <input type="text" name="min-value" value="0">
+                    </div>
+                    <div class="container-relative">
+                      <label class="filer-range-control">
+                        <span class="control-label">До</span>
+                      </label>
+                      <input type="text" name="max-value" value="9000">
+                    </div>
                   </div>
-                  <div class="container-relative">
-                    <label class="filer-range-control">
-                      <span class="control-label">До</span>
-                    </label>
-                    <input type="text" name="max-value" value="9000">
+                  <div class="range">
+                    <div class="range-scale">
+                      <button class="filter-range-handle handle-min type=button">
+                        <span class="visually-hidden">Управление нижней границей стоимости.</span>
+                      </button>
+                      <button class="filter-range-handle handle-max type=button">
+                        <span class="visually-hidden">Управление верхней границей стоимости.</span>
+                      </button>
+                    </div>
                   </div>
+                </fieldset>
+                <div class="filter-button-container">
+                  <!--Кнопки «Применить/Сбросить»-->
+                  <button class="filter-submit button button-submit button-secondary" type="submit">Применить</button>
+                  <button class="filter-reset button button-reset" type="reset">Сбросить</button>
                 </div>
-                <div class="range">
-                  <div class="range-scale">
-                    <button class="filter-range-handle handle-min type=button">
-                      <span class="visually-hidden">Управление нижней границей стоимости.</span>
-                    </button>
-                    <button class="filter-range-handle handle-max type=button">
-                      <span class="visually-hidden">Управление верхней границей стоимости.</span>
-                    </button>
-                  </div>
-                </div>
-              </fieldset>
-              <div class="filter-button-container">
-                <!--Кнопки «Применить/Сбросить»-->
-                <button class="filter-submit button button-submit button-secondary" type="submit">Применить</button>
-                <button class="filter-reset button button-reset" type="reset">Сбросить</button>
-              </div>
+              </section>
             </form>
           </div>
         </header>
@@ -191,7 +195,9 @@
                   <p class="product-card-stars product-card-stars-4">
                     <span class="visually-hidden">4 звезды.</span>
                   </p>
-                  <p class="product-card-rating">Рейтинг: 8,5</p>
+                  <div class="product-card-rating">
+                    <span class="rating">Рейтинг: 8,5</span>
+                  </div>
                 </div>
               </li>
               <li class="catalog-item">
@@ -296,16 +302,16 @@
               </li>
               <li class="footer-social-item">
                 <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">YouT</span>
+                  <span class="visually-hidden">YouTube.</span>
                 </a>
               </li>
             </ul>
           </section>
-          <p class="phone">
+          <address class="phone">
             <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </p>
-            <a class="footer-copyright" href="https://htmlacademy.ru/">
-            <img class="logo-copyright" src="image/logotype/logo-dev.svg" width="115" height="33" alt="Логотип школы HTML Academy">
+          </address>
+          <a class="footer-copyright" href="https://htmlacademy.ru/">
+            <img class="logo-copyright" src="image/logotype/logo-dev.svg" width="115" height="33" alt="Логотип школы HTML Academy.">
           </a>
         </div>
       </footer>
