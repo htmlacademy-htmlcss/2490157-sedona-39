@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Седона.Гостиницы</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="image/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -171,16 +172,18 @@
         </div>
       </footer>
     </div>
+
+    <!-- Модальное окно -->
     <div class="modal-container">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="close-icon" width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"/>
-          </svg>
+            </svg>
         </button>
         <section class="modal-content">
-          <h2 modal-title title-h2>Поиск гостиницы в Седоне</h2>
+          <h2 class="modal-title title-h2">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
               <label class="field-label" for="arrive">Дата Заезда:</label>
@@ -196,6 +199,8 @@
                 <span class="message">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
+
+            <!-- Счетчики -->
             <div class="container-flex">
               <div class="field-group field-guests">
                 <label class="field-label" for="adults">Взрослые:</label>
@@ -216,7 +221,7 @@
                   <label class="field-label children-label" for="children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-info" type="button" aria-labelledby="tooltip-children">
-                      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
                       </svg>

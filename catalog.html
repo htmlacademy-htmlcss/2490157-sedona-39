@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Седона.Гостиницы</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="image/favicon.png">
   </head>
   <body>
 		<div class="page-container">
@@ -27,7 +28,7 @@
             </ul>
             <ul class="nav-actions-list">
               <li class="nav-actions-item">
-                <a class="nav-actions-link nav-search" href="#">
+                <a class="nav-actions-link nav-search" href="modal.html">
                   <span class="visually-hidden">Поиск.</span>
                 </a>
               </li>
@@ -38,7 +39,7 @@
                 </a>
               </li>
               <li class="nav-actions-item">
-                <a class="header-button button button-sm button-primary" href="#">Хочу сюда!</a>
+                <a class="header-button button button-sm button-primary" href="modal.html">Хочу сюда!</a>
               </li>
             </ul>
           </nav>
@@ -67,19 +68,19 @@
                 <ul class="filter-list">
                   <li class="filter-item">
                     <label class="checkbox control">
-                      <input class="checkbox-input" type="checkbox" name="pool" checked>
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="pool" checked>
                       <span class="checkbox-label control-label control-mark">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="checkbox control">
-                      <input class="checkbox-input" type="checkbox" name="parking" checked>
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="parking" checked>
                       <span class="checkbox-label control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="checkbox control">
-                      <input class="checkbox-input" type="checkbox" name="wifi">
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="wifi">
                       <span class="checkbox-label control-label">Wi-Fi</span>
                     </label>
                   </li>
@@ -91,26 +92,26 @@
                 <ul class="filter-list">
                   <li class="filter-item">
                     <label class="radio control">
-                      <input class="radio-input" type="radio" name="housing-type" value="hotel" checked>
+                      <input class="radio-input visually-hidden" type="radio" name="housing-type" value="hotel" checked>
                       <span class="radio-label control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="radio control">
-                      <input class="radio-input" type="radio" name="housing-type" value="motel">
+                      <input class="radio-input visually-hidden" type="radio" name="housing-type" value="motel">
                       <span class="radio-label control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="radio control">
-                      <input class="radio-input" type="radio" name="housing-type" value="apartments">
+                      <input class="radio-input visually-hidden" type="radio" name="housing-type" value="apartments">
                       <span class="radio-label control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <!--Поле «Стоимость»-->
-              <fieldset class="filter-group filter-full">
+              <fieldset class="filter-group">
                 <legend class="filter-title title-h4">Стоимость, ₽:</legend>
                 <div class="range-inputs">
                   <div class="container-relative">
@@ -125,10 +126,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-selected">
-                      <button class="filter-range-handle handle-min type=button">
+                      <button class="filter-range-handle handle-min" type="button">
                         <span class="visually-hidden">Управление нижней границей стоимости.</span>
                       </button>
-                      <button class="filter-range-handle handle-max type=button">
+                      <button class="filter-range-handle handle-max" type="button">
                         <span class="visually-hidden">Управление верхней границей стоимости.</span>
                       </button>
                     </div>
@@ -137,7 +138,7 @@
               </fieldset>
               <div class="filter-button-container">
                 <!--Кнопки «Применить/Сбросить»-->
-                <button class="filter-submit button button-submit button-secondary" type="submit">Применить</button>
+                <button class="filter-submit button button-submit button-secondary" type="button">Применить</button>
                 <button class="filter-reset button button-reset" type="reset">Сбросить</button>
               </div>
             </form>
@@ -191,7 +192,7 @@
                     <span class="visually-hidden">4 звезды.</span>
                   </p>
                   <div class="product-card-rating">
-                    <span class="rating">Рейтинг: 8,5</span>
+                    <span class="rating">РЕЙТИНГ: 8,5</span>
                   </div>
                 </div>
               </li>
@@ -208,7 +209,7 @@
                   <p class="product-card-stars product-card-stars-4">
                     <span class="visually-hidden">4 звезды.</span>
                   </p>
-                  <p class="product-card-rating">Рейтинг: 9,2</p>
+                  <p class="product-card-rating">РЕЙТИНГ: 9,2</p>
                 </div>
               </li>
               <li class="catalog-item">
@@ -224,7 +225,7 @@
                   <p class="product-card-stars product-card-stars-3">
                     <span class="visually-hidden">3 звезды.</span>
                   </p>
-                  <p class="product-card-rating">Рейтинг: 6,9</p>
+                  <p class="product-card-rating">РЕЙТИНГ: 6,9</p>
                 </div>
               </li>
               <li class="catalog-item">
@@ -240,7 +241,7 @@
                   <p class="product-card-stars product-card-stars-2">
                     <span class="visually-hidden">2 звезды.</span>
                   </p>
-                  <p class="product-card-rating">Рейтинг: 5,0</p>
+                  <p class="product-card-rating">РЕЙТИНГ: 5,0</p>
                 </div>
               </li>
             </ul>
@@ -271,10 +272,10 @@
         <!--Секция «Подписка на рассылку»-->
         <section class="subscribe subscribe-inner" data-test="subscribe">
           <h2 class="subscribe-inner-title title-h2">Подпишитесь на рассылку</h2>
-          <p class="subscribe-inner-description subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-inner-description subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="user-email">Ваш E-mail.</label>
-            <input class="subscribe-input field" type="text" id="user-email" name="user-email" placeholder="Ваш e-mail">
+            <input class="subscribe-input field" type="text" id="user-email" name="user-email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button button button-secondary button-big" type="submit">Подписаться</button>
           </form>
         </section>
