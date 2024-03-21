@@ -1,9 +1,10 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Артеева](https://up.htmlacademy.ru/htmlcss/39/user/2490157).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
+* Cайт: [Мой проект Седона](https://elart27.github.io/2490157-sedona-39/).
 ---
+
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
