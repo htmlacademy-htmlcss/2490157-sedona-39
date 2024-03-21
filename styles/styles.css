@@ -36,6 +36,11 @@ body {
   margin: 0;
 }
 
+.main-index li,
+.main-inner li {
+  list-style-type: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -70,10 +75,6 @@ body {
 .page-main {
   padding: 0;
   margin: 0;
-}
-
-li {
-  list-style-type: none;
 }
 
 /* Title */
@@ -207,6 +208,10 @@ li {
 
 .page-header a {
   text-decoration: none;
+}
+
+.page-header li {
+  list-style-type: none;
 }
 
 .logo {
