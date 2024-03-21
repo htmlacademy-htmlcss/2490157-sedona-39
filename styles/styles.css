@@ -1021,6 +1021,7 @@ a[href^="tel:"] {
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
 }
 
