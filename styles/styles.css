@@ -133,12 +133,12 @@ body {
   background-color: #615048;
 }
 
-.button-primary:active {
-  background-color: #756157;
-}
-
 .button-primary:focus {
   background-color: #615048;
+}
+
+.button-primary:active {
+  background-color: #756157;
 }
 
 .button-secondary {
@@ -150,12 +150,12 @@ body {
   background-color: #68A2CA;
 }
 
-.button-secondary:active {
-  background-color: #82B3D3;
-}
-
 .button-secondary:focus {
   background-color: #68A2CA;
+}
+
+.button-secondary:active {
+  background-color: #82B3D3;
 }
 
 .button-successful {
@@ -166,12 +166,12 @@ body {
   background-color: #6C9E42;
 }
 
-.button-successful:active {
-  background-color: #7DB54F;
-}
-
 .button-successful:focus {
   background-color: #6C9E42;
+}
+
+.button-successful:active {
+  background-color: #7DB54F;
 }
 
 .button:active {
@@ -262,17 +262,25 @@ body {
   color:inherit;
 }
 
+.nav-link:hover {
+  color: #756157;
+}
+
+.nav-link:focus {
+  color: #756157;
+}
+
+.nav-link:active {
+  color: rgb(117, 97, 87, 30%)
+}
+
 .nav-actions-link {
   position: relative;
   height: 20px;
   width: 20px;
-  padding: 15px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  background-position: center;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   color:inherit;
 }
 
@@ -293,8 +301,8 @@ body {
 
 .nav-actions-link-badge {
   position: absolute;
-  top: -6px;
-  right: -4px;
+  top: -11px;
+  right: -7px;
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
@@ -312,12 +320,36 @@ body {
   max-height: 36px;
 }
 
-.nav-search {
-  background-image: url(../image/icons/search.svg);
+.nav-search-icon {
+  fill: #000000;
 }
 
-.nav-favourites {
-  background-image: url(../image/icons/heart.svg)
+.nav-search-icon:hover {
+  fill: #756157;
+}
+
+.nav-search-icon:focus {
+  fill: #756157;
+}
+
+.nav-search-icon:active {
+  fill: rgb(117, 97, 87, 30%)
+}
+
+.nav-favourites-icon {
+  fill: #000000;
+}
+
+.nav-favourites-icon:hover {
+  fill: #756157;
+}
+
+.nav-favourites-icon:focus {
+  fill: #756157;
+}
+
+.nav-favourites-icon:active {
+  fill: rgb(117, 97, 87, 30%)
 }
 
 /* Main */
@@ -648,12 +680,12 @@ padding: 112px 85px;
   fill: #68A2CA;
 }
 
-.footer-social-link:active .social-icon {
-  fill: rgb(104, 162, 202, 30%);
-}
-
 .footer-social-link:focus .social-icon {
   fill: #68A2CA;
+}
+
+.footer-social-link:active .social-icon {
+  fill: rgb(104, 162, 202, 30%);
 }
 
 .phone {
@@ -672,12 +704,12 @@ a[href^="tel:"] {
   color: #756157;
 }
 
-.footer-phone:active {
-  color: rgba(117, 97, 87, 30%);
-}
-
 .footer-phone:focus {
   color: #756157;
+}
+
+.footer-phone:active {
+  color: rgba(117, 97, 87, 30%);
 }
 
 .footer-copyright {
@@ -700,12 +732,12 @@ a[href^="tel:"] {
   fill: #756157;
 }
 
-.logo-copyright:active {
-  fill: rgb(117, 97, 87, 30%);
-}
-
 .logo-copyright:focus{
   fill: #756157;
+}
+
+.logo-copyright:active {
+  fill: rgb(117, 97, 87, 30%);
 }
 
 /* Filter */
@@ -786,6 +818,10 @@ a[href^="tel:"] {
 
 .button-reset:focus {
   outline: 3px solid #83b3d3;
+}
+
+.button-reset:active {
+  color: rgb(255, 255, 255, 30%);
 }
 
 .button-submit {
@@ -1099,7 +1135,6 @@ a[href^="tel:"] {
 .view-mode-link:focus {
   border: 2px solid #68A2CA;
 }
-
 
 .catalog-list {
   display: grid;
